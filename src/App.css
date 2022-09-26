@@ -1,0 +1,226 @@
+.app {
+  text-align: center;
+}
+
+.titulo-kanban{
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #4d0811, #fdbd45);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+/* Language: css */
+.contenedor{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.colums-cont{
+    max-width: 1200px;
+    height: 300px;
+    display: flex; /*Establecemos la flex al contenedor*/
+    flex-wrap: wrap; /*wrap para que los ítems sobrantes se desplacen a otra fila*/
+    padding:50px;
+    box-sizing: content-box;
+  }
+.card-column{
+  /* background-color: #3988ff; */
+  background-image: linear-gradient(to left, #8b0214, #c28004);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  -webkit-box-shadow: -11px 13px 15px 0px rgba(0,0,0,0.22);
+  -moz-box-shadow: -11px 13px 15px 0px rgba(0,0,0,0.22);
+  box-shadow: -11px 13px 15px 0px rgba(0,0,0,0.22);
+
+}
+.linea {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 10px 0;
+}
+
+/* Titulos de las columnas */
+.col-title{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+/* Tarjetas donde estan los titutos, descripciones y botones de cada tarea */
+.list-group-item{
+  /* background-color: #b7d4ff; */
+  background-image: linear-gradient(to left, #fce0ac, #ffffff);
+  color: white;
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 200px;
+  justify-content: center;
+}
+.list-group-item:hover{
+  -webkit-box-shadow: -11px 13px 15px 0px rgba(0,0,0,0.22);
+  -moz-box-shadow: -11px 13px 15px 0px rgba(0,0,0,0.22);
+  box-shadow: -11px 13px 15px 0px rgba(0,0,0,0.22);
+}
+
+
+/* Formulario de las Tasks */
+.formContainer{
+  /* background-color: #008f4c; */
+  background-image: linear-gradient(to left, #ca3b03, #e79703);
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* Clase Card de los formularios */
+.formContainer:hover{
+  background-color: #00a65a;
+  -webkit-box-shadow: -11px 13px 15px 0px rgba(0,0,0,0.22);
+  -moz-box-shadow: -11px 13px 15px 0px rgba(0,0,0,0.22);
+  box-shadow: -11px 13px 15px 0px rgba(0,0,0,0.22);
+}
+
+/* estos son los input de los formularios */
+.form-contenido{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  
+ 
+  
+}
+
+/* Input del titulo de la tarea */
+.form-title{
+  padding: 3px;
+  border-width: 2px;
+  border-color: #ffffff;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 7px;
+  margin: 5px;
+  box-shadow: 0px 0px 3px rgba(66,66,66,.75);
+}
+
+.form-title:hover{
+  border-color: #b36c03;
+}
+
+/* Input de la descripcion de la tarea */
+.form-description{
+  padding: 3px;
+  border-width: 2px;
+  border-color: #ffffff;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 7px;
+  margin: 5px;
+  box-shadow: 0px 0px 3px rgba(66,66,66,.75);
+}
+.form-description:hover{
+  border-color: #b36c03;
+}
+
+
+/* Boton de añadir nueva tarea */
+.btn-add-task{
+  background-color: #047a00;
+  border: none;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 5px;
+  color: #000000;
+  font-weight: bold;
+}
+.btn-add-task:hover{
+  background-color: #33ff00;
+  cursor: pointer;
+}
+
+/* boton para eliminar una tarea */
+.btn-del-task{
+  background-color: #c90303;
+  border: none;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 5px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1em;
+}
+.btn-del-task:hover{
+  background-color: #ff4d4d;
+  cursor: pointer;
+}
+
+/* boton para mover una tarea  */
+.btn-move-task{
+  background-color: #0091b6;
+  border: none;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 5px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1em;
+}
+.btn-move-task:hover{
+  background-color: #00ccff;
+  cursor: pointer;
+}
+
+/* Boton para editar una tarea */
+.btn-edit-task{
+  background-color: #c5c200;
+  border: none;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 5px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1em;
+}
+.btn-edit-task:hover{
+  background-color: #ffff4d;
+  cursor: pointer;
+}
+
+/* Titulo de la tarea */
+.title-task-card{
+  color: #000000;
+}
+/* descripcion de la tarea */
+.description-task-card{
+  color: #000000;
+}
