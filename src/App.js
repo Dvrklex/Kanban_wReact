@@ -5,7 +5,7 @@ function App() {
       
     <div className="app">
       <header className="app-header">
-        <h1 className="titulo-kanban">Kanban</h1>
+        <h1 className="titulo-kanban">Kanban Board</h1>
         <p>A project created with React Js</p>
       </header>
       <div className="container">

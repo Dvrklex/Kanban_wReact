@@ -10,10 +10,8 @@ const Column = ({columnid}) => {
                     {/* Identifoco el ID de la Columna a la que pertenece la tarea
                     y lo envio al componente TaskService */}
                     <TaskService
-
                         columnid={columnid}
                     />
-                    
                 </div>
             </div>
     )

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Fragment } from 'react'
 import Column  from './Column'
 import '../App.css';
 const ColumnContainer = () => {
@@ -17,7 +16,6 @@ const ColumnContainer = () => {
     
 
     return (
-        <Fragment>
             <div className='contenedor'>
                 {   
                     column.map((col) =>(
@@ -36,7 +34,6 @@ const ColumnContainer = () => {
                     ))        
                 }
                 </div>
-        </Fragment>
 
 
     )
